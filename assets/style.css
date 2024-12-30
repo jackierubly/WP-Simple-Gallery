@@ -1,0 +1,97 @@
+/* Simple Gallery Styling */
+.simple-gallery {
+    display: flex; /* Flexbox for horizontal alignment */
+    flex-wrap: wrap; /* Allow wrapping to the next row if items exceed container width */
+    gap: 20px; /* Spacing between items */
+    padding: 20px;
+
+}
+
+.gallery-item {
+    flex: 1 1 calc(25% - 20px); /* 4 items per row, accounting for gap */
+    max-width: calc(25% - 20px); /* Match the flex basis */
+    text-align: center;
+    background: #fff; /* White background for each item */
+    border: 1px solid #ffffff; /* Subtle border */
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px 8px 0 0; /* Top corners rounded */
+}
+
+.gallery-item h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+    color: #444;
+}
+
+.gallery-item p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 0 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery-item {
+        flex: 1 1 calc(50% - 20px); /* 2 items per row on tablets */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        flex: 1 1 100%; /* 1 item per row on phones */
+        max-width: 100%;
+    }
+}
+
+/* Teal Button */
+.teal-button {
+    background-color: #17a2b8;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.teal-button:hover {
+    background-color: #138496;
+}
+
+/* Red Button */
+.red-button {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.red-button:hover {
+    background-color: #e63939;
+}
+
