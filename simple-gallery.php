@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name: Simple Gallery 
+ * Plugin Name: Basic Simple Gallery 
  * Description: A simple gallery plugin with Title, Subtitle, and Image. 
  * Version: 1.2
  * Author: Jackie Rubly
